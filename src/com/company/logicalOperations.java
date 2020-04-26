@@ -158,7 +158,6 @@ public class logicalOperations {
         }
         }
 
-
       // . Creati o metoda care sa primeasca 3 numere ca si parametrii si sa returneze cel mai mare numar.
     // Apelati metoda in main() pentru a verifica daca functioneaza.
     public int threeNumbers( int a, int b, int c) {
