@@ -29,7 +29,7 @@ public class AppMain {
         Vet myVet= new Vet();
         System.out.println(myVet.name);
         System.out.println(myVet.spec);
-        
+
         Activity myActivity = new Activity();
 
         System.out.println(myActivity.name);
