@@ -308,7 +308,6 @@ public class logicalOperations {
      //   for (int j=7; i>=0; j--){
 
 
-
     ////reati o metoda in clasa LogicalOp, care sa primeste un numar ca si parametru.
     //// Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la 100,
     //// pornind de la numarul primit ca si parametru.

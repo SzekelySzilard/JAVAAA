@@ -156,6 +156,7 @@ public class MainTema4 {
         logicalOperations fibonacci= new logicalOperations();
         fibonacci.fibo();
 
+        
         //CozaLozaWoza
         logicalOperations coza=new logicalOperations();
          coza.cozaLozaWoza();
