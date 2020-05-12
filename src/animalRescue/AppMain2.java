@@ -24,7 +24,7 @@ public class AppMain2 {
 
      Girl.setName("Krisztina");
      Girl.setMoney(200);
-     
+
      Vet Vet= new Vet();
 
      Vet.setName("Doolittle");
