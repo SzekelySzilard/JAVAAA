@@ -14,7 +14,7 @@ public class AppMain2 {
         Rex.setPrefPlay("run");
 
 
-     Food Food= new Food();
+     DogFood Food= new DogFood();
 
      Food.setName("Purina");
      Food.setAvailable(true);
