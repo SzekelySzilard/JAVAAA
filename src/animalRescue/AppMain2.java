@@ -22,8 +22,8 @@ public class AppMain2 {
 
      Girl Girl= new Girl();
 
-     Girl.setName("Krisztina");
-     Girl.setMoney(200);
+  //   Girl.setName("Krisztina");
+ //    Girl.setMoney(200);
 
      Vet Vet= new Vet();
 

@@ -16,7 +16,9 @@ public class Cat extends Animal {
     public void run(){
         System.out.println("running..");
     }
-
+    public void speak(){
+        System.out.println("Meaow");
+    }
 }
 
 

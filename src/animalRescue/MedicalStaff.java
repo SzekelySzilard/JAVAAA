@@ -1,19 +1,9 @@
 package animalRescue;
 
-public class MedicalStaff {
-    public String name;
+public class MedicalStaff extends Human{
+
     public String spec;
 
-    public String getName(){
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-    public String getSpec(){
-        return spec;
-    }
 
     public void setSpec(String spec) {
         this.spec = spec;

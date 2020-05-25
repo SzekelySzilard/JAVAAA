@@ -1,18 +1,6 @@
 package animalRescue;
 
-public class AnimalResquer {
-
-    public class Girl {
-        public String name;
-        public int money;
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
+public class AnimalResquer   extends Human{
 
         public int getMoney() {
             return money;
@@ -21,6 +9,8 @@ public class AnimalResquer {
         public void setMoney(int money) {
             this.money = money;
         }
+
+        public int money;
 
 
         public void feed() {
@@ -40,5 +30,6 @@ public class AnimalResquer {
         }
 
 
+
     }
-}
+
