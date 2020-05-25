@@ -200,7 +200,7 @@ public class logicalOperations {
         }
     }
 
-    public void  micMare(int x, int y) {
+    public void micMare(int x, int y) {
         if (x < y) {
 
             for (int i = x; i <= y; i++) {
@@ -209,43 +209,44 @@ public class logicalOperations {
             }
         } else {
 
-             for (int  i=y; i>=x; i-- ){
-                 System.out.println(i);
-             }
+            for (int i = y; i >= x; i--) {
+                System.out.println(i);
+            }
 
         }
     }
     //5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
 
-    public void par(){
-        for( int i=0; i<= 100; i++){
+    public void par() {
+        for (int i = 0; i <= 100; i++) {
             double y = i % 2;
 
-            if (  y==0  ){
+            if (y == 0) {
                 System.out.println(i);
             }
         }
     }
     //  6. Creti o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
 
-    public void impar(){
-        for( int i=0; i<= 100; i++){
+    public void impar() {
+        for (int i = 0; i <= 100; i++) {
             double y = i % 2;
 
-            if (  y!=0 ){
+            if (y != 0) {
                 System.out.println(i);
             }
         }
     }
-//  Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar.
+
+    //  Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar.
 //  Metoda sa adune toate numerele pana la 100, pornind de la numarul primit ca si parametru,
 //  iar la final sa returneze rezultatul. Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
     public int sum100(int x) {
-    int sum = 0;
-    for (int i = x; i <= 100; i++) {
-        sum = sum + i;
-    }
-    return sum;
+        int sum = 0;
+        for (int i = x; i <= 100; i++) {
+            sum = sum + i;
+        }
+        return sum;
     }
 
 //8. Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar.
@@ -254,26 +255,26 @@ public class logicalOperations {
 // Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
 
 
-   public double avrg(int x){
+    public double avrg(int x) {
 
-       int sum1 = 0;
+        int sum1 = 0;
 
-       int y=x;
+        int y = x;
 
-       for (int i = x; i <= 100; i++) {
-           sum1 = sum1 + i;
-       }
+        for (int i = x; i <= 100; i++) {
+            sum1 = sum1 + i;
+        }
 
-       double coun= 0.0 ;
-       for (int i =y; i<=100; i++){
+        double coun = 0.0;
+        for (int i = y; i <= 100; i++) {
 
-           coun = coun+1;
-       }
-       double avrg2= sum1/coun;
+            coun = coun + 1;
+        }
+        double avrg2 = sum1 / coun;
 
-       return avrg2;
+        return avrg2;
 
-   }
+    }
 // Creat o metoda in clasa LogicalOp care sa afiseze urmatorul tipar:
 //
 //
@@ -298,15 +299,18 @@ public class logicalOperations {
 //
 //- semnul asterisk (*) se poate afisa sub forma de string
 
-    //public String  steluta;{
+    public String steluta;
 
-      //     String st="*";
-      //    for (int i = 1; i<=7;i++) {
+    {
+        String st = "*";
 
-        //
-       // }
-     //   for (int j=7; i>=0; j--){
-
+        for (int j = 7; j >= 1; j--) {
+            System.out.println(" ");
+            for (int i = 1; i <= 7; i++) {
+                System.out.print(st);
+            }
+        }
+    }
 
     ////reati o metoda in clasa LogicalOp, care sa primeste un numar ca si parametru.
     //// Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la 100,
@@ -314,10 +318,10 @@ public class logicalOperations {
     //// Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
 
 
-    public void  numerWhile( int x){
+    public void numerWhile(int x) {
 
-        int i=x;
-        while( i<=100){
+        int i = x;
+        while (i <= 100) {
 
             System.out.println(i);
 
@@ -333,10 +337,10 @@ public class logicalOperations {
     // deoarece metoda afiseaza, nu returneaza.
 
 
-    public void  numerWhileMinus( int x){
+    public void numerWhileMinus(int x) {
 
-        int i=x;
-        while( i>=-100){
+        int i = x;
+        while (i >= -100) {
 
             System.out.println(i);
 
@@ -352,12 +356,12 @@ public class logicalOperations {
     //
     //Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
 
-    public void oneToAnother( int x,  int y ){
+    public void oneToAnother(int x, int y) {
 
-        int i=x;
-        int j=y;
+        int i = x;
+        int j = y;
 
-        while(i<=j){
+        while (i <= j) {
 
             System.out.println(i);
 
@@ -375,17 +379,16 @@ public class logicalOperations {
     //
     //Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
 
-    public void crescator( int x, int y){
-        int i=x;
-        int j=y;
+    public void crescator(int x, int y) {
+        int i = x;
+        int j = y;
 
-        if (i<=j) {
+        if (i <= j) {
             do {
                 System.out.println(i);
                 i++;
             } while (i <= j);
-        }
-        else {
+        } else {
             while (j <= i) {
                 System.out.println(j);
                 j++;
@@ -394,28 +397,29 @@ public class logicalOperations {
         }
     }
 
-  //  Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.//
+    //  Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.//
 
-    public void oneHundredWhile(){
+    public void oneHundredWhile() {
 
-       int i=1;
-       while (i<=100){
+        int i = 1;
+        while (i <= 100) {
 
-           System.out.println(i);
-           i++;
-       }
-    }
-    //Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
-    public void onePair(){
-
-        int i=0;
-        while (i<=100){
-            i++;
-            double k= i%2;
-            if ( k==0 ) {
             System.out.println(i);
-
+            i++;
         }
+    }
+
+    //Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
+    public void onePair() {
+
+        int i = 0;
+        while (i <= 100) {
+            i++;
+            double k = i % 2;
+            if (k == 0) {
+                System.out.println(i);
+
+            }
         }
 
     }
@@ -426,20 +430,20 @@ public class logicalOperations {
 //
 
 
-    public void countWhile(){
-        int x=111;
-        long y=8899L;
-        long sum=0L;
-        int count=0;
+    public void countWhile() {
+        int x = 111;
+        long y = 8899L;
+        long sum = 0L;
+        int count = 0;
 
-     while (x<=y ) {
-         sum=sum+x;
-         x++;
-         count++;
-     }
+        while (x <= y) {
+            sum = sum + x;
+            x++;
+            count++;
+        }
         System.out.println(sum);
 
-        System.out.println(sum/count);
+        System.out.println(sum / count);
 
     }
 
@@ -447,13 +451,13 @@ public class logicalOperations {
     // si sa returneze media numerelor divizibile cu 7, din acel interval.
     // Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
 
-    public double avrgWhile( int x, int y) {
+    public double avrgWhile(int x, int y) {
 
         double sum = 0.0;
         int count = 0;
         double avrg;
 
-       do {
+        do {
 
             if (x % 7 == 0) {
                 sum = sum + x;
@@ -461,7 +465,7 @@ public class logicalOperations {
                 x++;
             } else x++;
 
-        } while ( x<=y);
+        } while (x <= y);
 
         avrg = sum / count;
         return avrg;
@@ -470,23 +474,23 @@ public class logicalOperations {
 
 //Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
 
-public void  fibo() {
-    int fibo2;
-    int count = 1;
-    int w = 0;
-    int k = 1;
-    System.out.println(w);
-    System.out.println(k + " ");
-    while (count <= 20) {
+    public void fibo() {
+        int fibo2;
+        int count = 1;
+        int w = 0;
+        int k = 1;
+        System.out.println(w);
+        System.out.println(k + " ");
+        while (count <= 20) {
 
-        fibo2 = w + k;
-        count++;
+            fibo2 = w + k;
+            count++;
 
-        System.out.println(fibo2 + " ");
-        w = k;
-        k = fibo2;
+            System.out.println(fibo2 + " ");
+            w = k;
+            k = fibo2;
 
-    }
+        }
 //Creati o metoda numita CozaLozaWoza.
 //
 //Metoda va afisa:
@@ -505,39 +509,238 @@ public void  fibo() {
 //23 Coza Loza 26 Coza Woza 29 CozaLoza 31 32 Coza
 
 //Apelati metoda in main() pentru a verifica daca functioneaza.
-}
-    public void cozaLozaWoza() {
-
-          int i=0;
-     while(i<=110){
-
-       if (i%11==0){    //nu inteleg de ce scrie cate 9 pe linie :)) //
-           System.out.println(" ");
-       }
-         if (i%3==0 && i%5==0 && i%7==0 ) {
-             System.out.print("CozaLozaWoza ");
-         }else if (i%3==0 && i%5==0 ) {
-             System.out.print("CozaLoza");
-         } else if (i%3==0 && i%7==0 ){
-             System.out.print("CozaWoza");
-         } else if (i%5==0 && i%7==0 ){
-             System.out.print("LozaWoza");
-         } else if (i%3==0){
-             System.out.print("Coza");
-         }else if (i%5==0){
-             System.out.print("Loza");
-         }else if (i%7==0){
-             System.out.print("Woza");
-         }else System.out.print(i + " ");
-
-         i++;
     }
 
+    public void cozaLozaWoza() {
+
+        int i = 0;
+        while (i <= 110) {
+
+            if (i % 11 == 0) {    //nu inteleg de ce scrie cate 9 pe linie :)) //
+                System.out.println(" ");
+            }
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+                System.out.print("CozaLozaWoza ");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print("CozaLoza");
+            } else if (i % 3 == 0 && i % 7 == 0) {
+                System.out.print("CozaWoza");
+            } else if (i % 5 == 0 && i % 7 == 0) {
+                System.out.print("LozaWoza");
+            } else if (i % 3 == 0) {
+                System.out.print("Coza");
+            } else if (i % 5 == 0) {
+                System.out.print("Loza");
+            } else if (i % 7 == 0) {
+                System.out.print("Woza");
+            } else System.out.print(i + " ");
+
+            i++;
+        }
+
+    }
+
+
+    public int[] getarray() {
+
+        int[] array = new int[100];
+
+        for (int i = 0; i < 100; i++) {
+
+            array[i] = i + 1;
+        }
+        return array;
+
+    }
+
+    public void printarray(int[] array) {
+
+        for (int i = 0; i < array.length; i++) {
+
+            System.out.println(array[i]);
+        }
+    }
+
+
+    //Creati o metoda care primeasca un parametru de tip array de numere intregi gol,
+    // si sa il returneze populat cu toate valorile pare de la 1 la 100.
+    // Apelati metoda in main() pentru a verifica daca functioneaza. Atentie, metoda returneaza un array,
+    // deci acesta va trebui surprins si afisat folosind o bucla.
+
+    // public int[] parArray() {
+
+
+    //    int[] array = new int[50];
+
+    //   for (int j = 1; j < 100; j++) {
+    //       int k = j % 2;
+
+    //       if (k == 0) ;
+
+
+    //     for (int i = 0; i < 50; i++) {
+
+    //       array[i] = j;
+
+    //     }
+    /// }
+
+    // }
+    // Creati o metoda care sa primeasca un parametru de tip array de numere,
+    // si sa fie populat cu valori. Metoda sa calculeze si sa returneze media numerelor din array.
+    // Apelati metoda in main() pentru a verifica daca functioneaza.
+    public void avrgArray() {
+
+        int[] myArray = new int[100];
+        for (int i = 0; i < 100; i++) {
+            myArray[i] = i + 1;
+        }
+        double sum = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            sum += myArray[i];
+
+        }
+
+        double avrg = sum / myArray.length;
+        System.out.println(avrg);
+
+    }
+    //Creati o metoda care sa primeasca un parametru de tip array de string-uri,
+    // populat cu valori, si un parametru de tip String. Metoda sa verifice daca valoarea string-ului primit
+    // se regaseste in array-ul primit, iar daca da sa returneze true iar daca nu, sa returneze false.
+    // Apelati metoda in main() pentru a verifica daca functioneaza.
+
+
+    public static boolean tf1() {
+
+        String[] aa = new String[3];
+        aa[0] = "q";
+        aa[1] = "w";
+        aa[2] = "e";
+
+        String toVerify = "w";
+        boolean tf = false;
+
+        for (int i = 0; i < aa.length; i++) {
+
+
+            if (aa[i].equals(toVerify)) {
+                tf = true;
+            }
+            // return tf;
+        }
+        return tf;
+    }
+
+    public int pozitie() {
+
+
+        int[] poz = {1, 3, 4, 5, 6, 7, 8, 9,};
+        int x = 6;
+
+        for (int i = 0; i < 8; i++) {
+            if (poz[i] == x) {
+
+                x = i;
+            }
+        }//return i;
+
+        return x;
+    }
+
+    public void lini() {
+
+        String[] liniuta = new String[10];
+        String x = "- - - - - - - - - -";
+        for (int i = 0; i < 10; i++) {
+            liniuta[i] = x;
+
+            System.out.println(liniuta[i]);
+
+        }
+    }
+
+
+//Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
+// si un parametru de tip numar. Metoda sa verifice daca numarul exista in array,
+// si daca da, sa returneze array-ul primit, fara acel numar.
+// Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public void faraNumar() {
+        int[] numar = {1, 3, 4, 5, 6, 7, 8, 9,};
+        int[] fNumar = new int[numar.length - 1];
+        int x = 4;
+
+        for (int i = 0; i < 8; i++) {
+            if (numar[i] == x) {
+
+                for (int j = i; j < fNumar.length; j++) {
+                    fNumar[j] = numar[i + 1];
+                }
+                for (int k = 0; k < fNumar.length; k++) {
+
+                    System.out.println(fNumar[i]);
+                }
+            }
+        }
+        // Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
+        // Apelati metoda in main()pentru a verifica daca functioneaza.
+
+
+    }
+
+    public void mic2() {
+        int[] mic1 = new int[4];
+        mic1[0] = 6;
+        mic1[1] = 2;
+        mic1[2] = 5;
+        mic1[3] = 1;
+        int mic = 0;
+        for (int k = 1; k < 4; k++) {
+            for (int i = 0; i < mic1.length - 1; i++) {
+                if (mic1[i + 1] < mic1[i]) {
+                    mic = mic1[i + 1];
+                    mic1[i + 1] = mic1[i];
+                    mic1[i] = mic;
+                }
+            }
+        }
+        for (int i = 0; i < mic1.length; i++) {
+
+            System.out.println(mic1[i]);
+
+        }
+
+        System.out.println(mic1[1]);
+
+    }
+// Creati o metoda care sa primeasca doi parametrii: un array populat cu valori, si un array gol.
+// Metoda sa copieze toate valorile din primul array,
+// parcurgandu-l, in cel de-al doilea. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public void doi() {
+        int[] unu = new int[4];
+        unu[0] = 3;
+        unu[1] = 1;
+        unu[2] = 6;
+        unu[3] = 6;
+        int[] doi = new int[4];
+
+        for (int i = 0; i < unu.length; i++) {
+
+                doi[i] = unu[i];
+        }
+        for (int i = 0; i <doi.length; i++) {
+
+            System.out.println(doi[i]);
+        }
+
+    }
 }
 
 
 
-}
+
 
 
 
