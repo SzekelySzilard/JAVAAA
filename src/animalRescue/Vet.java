@@ -7,4 +7,6 @@ public class Vet extends MedicalStaff {
         System.out.println("Applyes treatment to animal");
     }
 
-}
+
+    }
+

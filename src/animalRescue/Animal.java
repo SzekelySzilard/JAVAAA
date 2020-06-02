@@ -1,28 +1,12 @@
 package animalRescue;
 
-public class Animal {
-    private String name ;
-    private int age ;
+public abstract  class Animal extends LivingThing{
+
     private int health;
     private int hunger;
     private int  mood;
     private String prefFood;
 
-
-    public String getName(){
-        return name;
-    }
-    public void setName( String name ){
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge( int age) {
-        this.age= age;
-    }
 
     public int getHealth() {
         return health;
@@ -52,20 +36,11 @@ public class Animal {
         this.prefFood = prefFood;
     }
 
-    public void eat(){
-        System.out.println("Eating..");
-    }
+    public abstract  void eat();
 
-    public void speak(){
-        System.out.println("sounds");
-    }
+    public abstract void ill();
+    public abstract  void sleep();
 
-    public void sleep(){
-        System.out.println("ZzzZZzz..");
-    }
 
-    public void ill()  {
-        System.out.println(" simptoms..");
-    }
 
 }

@@ -1,6 +1,6 @@
 package animalRescue;
 
-public class MedicalStaff extends Human{
+public  class MedicalStaff extends Human{
 
     public String spec;
 
@@ -15,5 +15,10 @@ public class MedicalStaff extends Human{
 
     public void suggestTreatment() {
         System.out.println("suggests treatment to animal resquer");
+    }
+
+    @Override
+    public void speak() {
+        System.out.println("speaks with pet owner");
     }
 }

@@ -1,16 +1,7 @@
 package animalRescue;
 
-public class Human {
+public abstract class Human extends LivingThing {
 
-    public String name;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
 
 

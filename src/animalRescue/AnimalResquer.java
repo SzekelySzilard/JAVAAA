@@ -1,6 +1,6 @@
 package animalRescue;
 
-public class AnimalResquer   extends Human{
+public abstract class AnimalResquer   extends Human{
 
         public int getMoney() {
             return money;
@@ -13,21 +13,16 @@ public class AnimalResquer   extends Human{
         public int money;
 
 
-        public void feed() {
-            System.out.println("feeding the animal ");
-        }
+        public abstract void feed() ;
+        public abstract void treatment();
+        public void vet(){
+            System.out.println("takes animal to vet");
+        };
 
-        public void treatment() {
-            System.out.println(" giving treatment to animal");
-        }
+        public abstract void buy();
+    public abstract void run();
 
-        public void vet() {
-            System.out.println("takes animal to vet ");
-        }
 
-        public void buy() {
-            System.out.println(" buys food for the animal");
-        }
 
 
 
