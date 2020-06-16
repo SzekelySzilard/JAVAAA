@@ -813,6 +813,7 @@ public class logicalOperations {
 
     }
 
+
     public void celMaiMare(List<Integer> list){
 
         int max=0;

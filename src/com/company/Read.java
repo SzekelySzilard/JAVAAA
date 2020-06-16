@@ -115,6 +115,7 @@ public class Read {
         do {
           try {
 
+
                Scanner scan = new Scanner(System.in);
                list.add(scan.nextInt());
            }catch (InputMismatchException e){
