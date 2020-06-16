@@ -1,7 +1,9 @@
 package com.company;
 
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class logicalOperations {
 
@@ -559,7 +561,7 @@ public class logicalOperations {
 
         for (int i = 0; i < array.length; i++) {
 
-            System.out.println(array[i]);
+            System.out.print(array[i]);
         }
     }
 
@@ -634,11 +636,11 @@ public class logicalOperations {
         return tf;
     }
 
-    public int pozitie() {
+    public int pozitie(int x) {
 
 
         int[] poz = {1, 3, 4, 5, 6, 7, 8, 9,};
-        int x = 6;
+
 
         for (int i = 0; i < 8; i++) {
             if (poz[i] == x) {
@@ -827,7 +829,46 @@ public class logicalOperations {
 
     }
 
+//5. In clasa LogicalOp, creati o metoda care sa primeasca un array de numere ca si parametru, si un numar.
+// Fara a folosi conditii, si folosind un try-catch, afisati valoarea de pe pozitia numarului primit, iar
+// daca valoarea numarului este mai mare decat numarul de pozitii din array, afisati textul: "Inside catch, number too large".
+
+public void  faraIf(  ){
+    int[] myArray= new int[3];
+        myArray[0]=2;
+        myArray[1]=4;
+        myArray[2]=6;
+
+        try{
+            System.out.println("enter position");
+            Scanner scan= new Scanner(System.in);
+            int y=scan.nextInt();
 
 
+            System.out.println(myArray[y]);
+        }catch(IndexOutOfBoundsException e){
+            System.out.println("inside catch, number too large");
+        }catch (InputMismatchException i){
+            System.out.println("invali input");
+        }
 
+    }
+
+//In clasa LogicalOp, creati o metoda  'wait()'.
+// Metoda sa nu returneze nimic, dar sa primeasca un parametru de tip int.
+// In interiorul ei, tratati metoda Thread.sleep(),
+// astfel incat metoda noastra sa primeasca valoarea in secunde, cat sa astepte. Ex: wait(5) -> asteapta 5 secunde.
+
+
+public List<Integer> szar() {
+    List<Integer> listLab = new ArrayList();
+
+    listLab.add(1);
+    listLab.add(8);
+    listLab.add(3);
+    listLab.add(4);
+    return  listLab;
+
+
+}
 }

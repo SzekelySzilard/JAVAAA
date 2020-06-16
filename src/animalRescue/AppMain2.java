@@ -3,7 +3,27 @@ package animalRescue;
 public class AppMain2 {
 
     public static void main(String[] args) {
-        Dog Rex= new Dog();
+        Dog Rex= new Dog() {
+            @Override
+            public void speak() {
+
+            }
+
+            @Override
+            public void ill() {
+
+            }
+
+            @Override
+            public void sleep() {
+
+            }
+
+            @Override
+            public void run() {
+
+            }
+        };
 
         Rex.setName("Rex");
         Rex.setAge(4);
